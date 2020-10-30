@@ -3,7 +3,7 @@
 Instalar flask (micro framework de orientação a objetos).
 pip install flask
 
-Criar arquivo >> .flaskenv 
+Criar arquivo >> .flaskenv
 
 Adicionar valores abaixo no arquivo
 FLASK_APP=app.py
