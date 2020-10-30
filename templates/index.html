@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- comentário -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    <meta charset="UTF-8">
+    <title>meu site Lindo</title>
+</head>
+<body>
+    {% if nome_pessoa %}
+    <h1>Hello World!! {{ nome_pessoa }}</h1>
+    {% else %}
+    <h1>Hello desconhecido</h1>
+    {% endif %}
+    <p> agora escreve um paragrafo de texto</p>
+    <ul>
+    {% for item in lista %}
+    <li> {{ item }}</li>
+    {% endfor %}
+    </ul>
+    <h2 style="color: green;"> Mudei</h2>
+</body>
+</html>
